@@ -3,18 +3,27 @@
    Palette, type, and layout notes live in README.md
    ============================================================ */
 
+@font-face {
+  font-family: "Zenith CP";
+  src: url("../assets/fonts/Zenith.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --paper: #faf8f3;
+  --paper: #F5EFD6;
   --ink: #15171a;
   --ink-soft: #3d3f42;
   --muted: #6b6a64;
-  --blue: #1f3a93;
-  --blue-dark: #152a6b;
-  --mist: #e9eef8;
+  --blue: #e8a0b4;
+  --blue-dark: #d4789a;
+  --mist: #fce8ef;
   --rule: #d9d4c8;
   --ochre: #a8641c;
   --mono: "Cousine", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --script: "Zenith CP", "Dancing Script", "Brush Script MT", cursive;
   --max: 1200px;
   --gutter: clamp(20px, 4.5vw, 64px);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -217,6 +226,7 @@ img {
   padding: clamp(10px, 1.5vw, 20px) var(--gutter) clamp(36px, 5vw, 64px);
   border-bottom: 1px solid var(--rule);
   scroll-margin-top: 64px;
+  background: linear-gradient(135deg, #fff5f8 0%, #fce8ef 50%, #faf8f3 100%);
 }
 
 .hero-inner {
@@ -249,12 +259,13 @@ img {
 
 .hero-name {
   margin: 0;
-  font-family: var(--mono);
-  font-size: clamp(2.75rem, 8.2vw, 7rem);
-  font-weight: 700;
-  line-height: 0.9;
-  letter-spacing: -0.045em;
-  text-transform: uppercase;
+  font-family: var(--script);
+  font-size: clamp(3rem, 9vw, 7.5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--blue-dark);
 }
 
 .hero-name span {
@@ -440,11 +451,12 @@ img {
 
 .section-title {
   margin: 0;
-  font-family: var(--mono);
-  font-size: clamp(1.35rem, 2.3vw, 1.9rem);
-  font-weight: 700;
+  font-family: var(--script);
+  font-size: 68px;
+  font-weight: 400;
   line-height: 1.25;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+  color: var(--blue-dark);
 }
 
 .section-count {
@@ -526,6 +538,9 @@ img {
 }
 
 .toc-row {
+  border-radius: 12px;
+  padding: 6px 10px;
+  box-shadow: 0 2px 8px rgba(232, 160, 180, 0.15);
   display: flex;
   align-items: baseline;
   gap: 12px;
@@ -730,14 +745,16 @@ img {
   grid-area: tag;
   width: fit-content;
   min-width: 42px;
-  padding: 2px 5px;
+  padding: 3px 10px;
   border: 1px solid var(--rule);
+  border-radius: 999px;
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: 0.04em;
   color: var(--muted);
   text-align: center;
   white-space: nowrap;
+  background: var(--mist);
 }
 
 .doc-main {
@@ -1725,3 +1742,34 @@ img {
     font-size: 7pt;
   }
 }
+
+/* Decorative pink dividers */
+.section + .section { border-top: 1px solid var(--rule); }
+.section::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-dark));
+  margin-bottom: 12px;
+  border-radius: 2px;
+}
+
+/* Transparent decorative background elements */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.12;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body::before {
+  top: -40px;
+  right: -60px;
+  width: 420px;
+  height: 420px;
+  background-image: url("../assets/bg-element-1.png");
+}
+
