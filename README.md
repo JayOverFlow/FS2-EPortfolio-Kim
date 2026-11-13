@@ -1,6 +1,6 @@
 # Academic E-Portfolio
 
-Portfolio site for John Rex B. Duran, pre-service teacher of Grade 7 TLE (ICT) at President Diosdado Macapagal High School.
+Portfolio site for Kimberlie Crissel F. Porteria, pre-service teacher of Grade 7 TLE (ICT) at President Diosdado Macapagal High School.
 
 Live URL: `https://jayoverflow.github.io/FS1-EPortfolio/`
 

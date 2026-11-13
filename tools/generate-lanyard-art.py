@@ -108,7 +108,7 @@ def card_back():
     text_center(d, W//2, 468, "TUP-TAGUIG  ·  EST. 1978", font(26, True), GOLD)
     d.line([212, 545, 812, 545], fill=GOLD, width=3)
     rows = [
-        ("NAME", "John Rex B. Duran"),
+        ("NAME", "Kimberlie Crissel F. Porteria"),
         ("PROGRAM", "BTVTED, Computer Programming"),
         ("PLACEMENT", "Grade 7 TLE (ICT), PDMHS"),
         ("EMAIL", "johnrex.duran@tup.edu.ph"),

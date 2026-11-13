@@ -1,17 +1,17 @@
 window.PORTFOLIO = {
   teacher: {
-    name: "John Rex B. Duran",
+    name: "Kimberlie Crissel F. Porteria",
     role: "Pre-service teacher",
     program: "BTVTED, Major in Computer Programming",
     institution: "Technological University of the Philippines - Taguig",
     school: "President Diosdado Macapagal High School",
     division: "Schools Division of Taguig City and Pateros",
-    placement: "Grade 7 TLE (ICT), Sections James, Genesis, Isaiah",
+    placement: "Grade 11 ABM, Section Zobel",
     period: "First trimester, S.Y. 2026–2027",
-    email: "johnrex.duran@tup.edu.ph",
+    email: "kimberliecrissel.porteria@tup.edu.ph",
     github: "https://github.com/JayOverFlow",
     repo: "FS1-EPortfolio",
-    ct: "Ferdinand S. Baltazar"
+    ct: "Anna Lyn L. Ayeras"
   },
 
   ts: [
@@ -43,14 +43,14 @@ window.PORTFOLIO = {
       note: "Context and purpose.",
       type: "prose",
       intro: [
-        "I am a pre-service teacher in the BTVTED program at the Technological University of the Philippines - Taguig, majoring in Computer Programming. For the first trimester of S.Y. 2026–2027 I taught Grade 7 TLE and Grade 12 TechPro at President Diosdado Macapagal High School, handling the TLE: FCS subject across Sections Jeremiah, King, and Leviticus.",
+        "I am a pre-service teacher in the BTVTED program at the Technological University of the Philippines - Taguig, majoring in Computer Programming. For the first trimester of S.Y. 2026–2027 I taught Grade 11 ABM at President Diosdado Macapagal High School, handling Accounting Books across Section Zobel.",
       ],
       meta: [
         ["Program", "BTVTED, Major in Computer Programming"],
-        ["Placement", "Grade 7 TLE (FCS), Sections Jeremiah, King, Leviticus"],
+        ["Placement", "Grade 11 ABM, Section Zobel"],
         ["Partner school", "President Diosdado Macapagal High School"],
         ["Period", "First trimester, S.Y. 2026–2027"],
-        ["Cooperating teacher", "Ferdinand S. Baltazar"],
+        ["Cooperating teacher", "Anna Lyn L. Ayeras"],
         ["Institution", "Technological University of the Philippines - Taguig"]
       ]
     },
@@ -60,7 +60,7 @@ window.PORTFOLIO = {
       note: "Education, placement, skills.",
       type: "cv",
       intro: [
-        "My background is in computer programming, and my field study put that background in front of Grade 7 learners for a trimester. The summary below is the short version; the PDF is the submitted copy."
+        "My background is in computer programming, and my field study put that background in front of Grade 11 learners for a trimester. The summary below is the short version; the PDF is the submitted copy."
       ],
       cv: {
         education: {
@@ -68,8 +68,8 @@ window.PORTFOLIO = {
           lines: ["Technological University of the Philippines - Taguig", "In progress"]
         },
         practice: {
-          title: "Field Study, Grade 7 TLE (ICT)",
-          lines: ["President Diosdado Macapagal High School", "First trimester, S.Y. 2026–2027", "Cooperating Teacher: Ferdinand S. Baltazar"]
+          title: "Field Study, Grade 11 ABM",
+          lines: ["President Diosdado Macapagal High School", "First trimester, S.Y. 2026–2027", "Cooperating Teacher: Anna Lyn L. Ayeras"]
         },
         skills: [
           "Computer programming fundamentals",
@@ -78,7 +78,7 @@ window.PORTFOLIO = {
           "Classroom management",
         ],
         references: [
-          { name: "Ferdinand S. Baltazar", role: "Cooperating Teacher, President Diosdado Macapagal High School" }
+          { name: "Anna Lyn L. Ayeras", role: "Cooperating Teacher, President Diosdado Macapagal High School" }
         ]
       },
       docs: [
@@ -201,7 +201,12 @@ window.PORTFOLIO = {
           group: "Professional development organizations",
           title: "Professional Development Certificates",
           desc: "Certificates from seminars and training organized by professional development providers.",
-          type: "Image set"
+          type: "Image set",
+          files: [
+            "documents/pd-certificates.pdf",
+            "documents/pd-certificates/CERT1.png",
+            "documents/pd-certificates/CERT2.png"
+          ]
         },
         {
           slug: "lac-participation",
@@ -284,7 +289,7 @@ window.PORTFOLIO = {
       title: "Teaching Philosophy",
       note: "What I believe teaching is for.",
       type: "philosophy",
-      quote: "As a future educator, I want to become a teacher who believes in every student's capacity to learn and grow.",
+      quote: "I've Been in Your Seat: Teaching Through Empathy — effective teaching is rooted in empathy, the ability to put oneself in the students' shoes.",
       docs: [
         {
           slug: "teaching-philosophy",
