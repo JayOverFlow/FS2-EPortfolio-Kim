@@ -109,10 +109,9 @@ def card_back():
     d.line([212, 545, 812, 545], fill=GOLD, width=3)
     rows = [
         ("NAME", "Kimberlie Crissel F. Porteria"),
-        ("PROGRAM", "BTVTED, Computer Programming"),
-        ("PLACEMENT", "Grade 7 TLE (ICT), PDMHS"),
-        ("EMAIL", "johnrex.duran@tup.edu.ph"),
-        ("GITHUB", "github.com/JayOverFlow"),
+        ("ID NO.", "TUPT-23-0214"),
+        ("PROGRAM", "BTVTED, Major in Computer Programming"),
+        ("SCHOOL", "President Diosdado Macapagal High School"),
     ]
     y = 592
     for k, v in rows:

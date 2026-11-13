@@ -9,7 +9,7 @@ if (mount) {
       frontImage: 'assets/card-front-real.jpg',
       backImage: 'assets/card-back.png',
       /* 'contain' keeps every element of the real ID visible (no cropping). */
-      imageFit: 'contain',
+      imageFit: 'cover',
       cardColor: '#eef3fb',
       orientation: 'portrait',
       /* Laminated ID card: glossy front, not holographic foil. */
