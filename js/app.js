@@ -191,6 +191,20 @@
       }
 
       const tag = doc.ts || doc.tag || "—";
+      if (doc.slug === "school-grounds") {
+        const info = h("div", { class: "doc doc-static" },
+          h("span", { class: "doc-check", "aria-hidden": "true" }),
+          h("span", { class: "doc-tag" }, tag),
+          h("span", { class: "doc-main" },
+            h("span", { class: "doc-title" }, doc.title),
+            h("span", { class: "doc-desc" }, doc.desc)
+          ),
+          h("span", { class: "doc-meta" }, h("span", { class: "doc-type" }, doc.type))
+        );
+        list.append(info);
+        return;
+      }
+
       const row = h("button", {
         class: "doc status-" + statusOf(doc),
         type: "button",
@@ -267,6 +281,14 @@
     if (section.cv) body.push(renderCv(section.cv));
     if (section.quote) body.push(h("blockquote", { class: "statement" }, section.quote));
     if (section.docs) body.push(renderDocs(section.docs));
+    if (section.roman === "IV") {
+      const sgFiles = ["documents/school-grounds/campus-01.png","documents/school-grounds/campus-02.png","documents/school-grounds/campus-03.png"];
+      const carousel = h("div", { class: "sg-carousel" });
+      sgFiles.forEach(function (file) {
+        carousel.append(h("div", { class: "sg-card" }, h("img", { src: file, alt: "School grounds", loading: "lazy" })));
+      });
+      body.push(carousel);
+    }
 
     if (section.meta) {
       const facts = h("dl", { class: "facts" });
@@ -330,6 +352,19 @@
     if (files.length === 1 && /\.pdf$/i.test(files[0])) {
       wrap.append(h("iframe", { src: files[0], title: doc.title, loading: "lazy" }));
       wrap.append(h("p", { class: "viewer-download" }, h("a", { href: files[0], target: "_blank", rel: "noopener" }, "[Open PDF in a new tab]")));
+      return wrap;
+    }
+
+    if (doc.slug === "school-grounds") {
+      const carousel = h("div", { class: "sg-carousel" });
+      files.forEach(function (file) {
+        if (isImage(file)) {
+          carousel.append(h("div", { class: "sg-card" },
+            h("img", { src: file, alt: doc.title, loading: "lazy" })
+          ));
+        }
+      });
+      wrap.append(carousel);
       return wrap;
     }
 
