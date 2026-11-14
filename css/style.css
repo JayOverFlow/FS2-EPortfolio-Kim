@@ -540,7 +540,7 @@ img {
 .intro-drop > p:first-child::first-letter {
   float: left;
   padding-right: 0.1em;
-  font-family: var(--mono);
+  font-family: var(--script);
   font-size: 3.3em;
   font-weight: 700;
   line-height: 0.82;
