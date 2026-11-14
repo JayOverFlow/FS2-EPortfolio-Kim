@@ -201,11 +201,9 @@ window.PORTFOLIO = {
           group: "Professional development organizations",
           title: "Professional Development Certificates",
           desc: "Certificates from seminars and training organized by professional development providers.",
-          type: "Image set",
+          type: "PDF",
           files: [
-            "documents/pd-certificates.pdf",
-            "documents/pd-certificates/CERT1.png",
-            "documents/pd-certificates/CERT2.png"
+            "documents/pd-certificates.pdf"
           ]
         },
         {

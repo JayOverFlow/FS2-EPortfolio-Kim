@@ -191,6 +191,20 @@
       }
 
       const tag = doc.ts || doc.tag || "—";
+      if (doc.slug === "lac-participation") {
+        const info = h("div", { class: "doc doc-static" },
+          h("span", { class: "doc-check", "aria-hidden": "true" }),
+          h("span", { class: "doc-tag" }, tag),
+          h("span", { class: "doc-main" },
+            h("span", { class: "doc-title" }, doc.title),
+            h("span", { class: "doc-desc" }, doc.desc)
+          ),
+          h("span", { class: "doc-meta" }, h("span", { class: "doc-type" }, doc.type))
+        );
+        list.append(info);
+        return;
+      }
+
       if (doc.slug === "school-grounds") {
         const info = h("div", { class: "doc doc-static" },
           h("span", { class: "doc-check", "aria-hidden": "true" }),
@@ -280,6 +294,15 @@
     if (section.type === "toc") body.push(renderToc(section));
     if (section.cv) body.push(renderCv(section.cv));
     if (section.quote) body.push(h("blockquote", { class: "statement" }, section.quote));
+    if (section.roman === "VI") {
+      const certFiles = ["documents/pd-certificates/showcase-01.png","documents/pd-certificates/showcase-03.png","documents/pd-certificates/showcase-02.png"];
+      const showcase = h("div", { class: "cert-showcase" });
+      certFiles.forEach(function (file) {
+        showcase.append(h("div", { class: "cert-card" }, h("img", { src: file, alt: "Certificate", loading: "lazy" })));
+      });
+      body.push(showcase);
+    }
+
     if (section.docs) body.push(renderDocs(section.docs));
     if (section.roman === "IV") {
       const sgFiles = ["documents/school-grounds/campus-01.png","documents/school-grounds/campus-02.png","documents/school-grounds/campus-03.png"];
@@ -289,6 +312,7 @@
       });
       body.push(carousel);
     }
+
 
     if (section.meta) {
       const facts = h("dl", { class: "facts" });
