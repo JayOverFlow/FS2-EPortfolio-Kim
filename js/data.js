@@ -119,9 +119,9 @@ window.PORTFOLIO = {
           desc: "Photographs of the campus, the classrooms, and the TLE workspaces I used.",
           type: "Image set",
           files: [
-            "documents/school-grounds/campus-01.jpg",
-            "documents/school-grounds/campus-02.jpg",
-            "documents/school-grounds/campus-03.jpg"
+            "documents/school-grounds/campus-01.png",
+            "documents/school-grounds/campus-02.png",
+            "documents/school-grounds/campus-03.png"
           ]
         }
       ]
