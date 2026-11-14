@@ -43,7 +43,7 @@ window.PORTFOLIO = {
       note: "Context and purpose.",
       type: "prose",
       intro: [
-        "I am a pre-service teacher in the BTVTED program at the Technological University of the Philippines - Taguig, majoring in Computer Programming. For the first trimester of S.Y. 2026–2027 I taught Grade 11 ABM at President Diosdado Macapagal High School, handling Accounting Books across Section Zobel.",
+        "As a BTVTED Computer Programming major at the Technological University of the Philippines – Taguig, my Field Study took an exciting turn into business education. For the first trimester of S.Y. 2026–2027, I had the privilege of teaching Accounting Books to Grade 11 ABM, Section Zobel at President Diosdado Macapagal High School.",
       ],
       meta: [
         ["Program", "BTVTED, Major in Computer Programming"],
@@ -60,7 +60,7 @@ window.PORTFOLIO = {
       note: "Education, placement, skills.",
       type: "cv",
       intro: [
-        "My background is in computer programming, and my field study put that background in front of Grade 11 learners for a trimester. The summary below is the short version; the PDF is the submitted copy."
+        "With a foundation in computer programming, my field study gave me the chance to step in front of Grade 11 learners. Read the quick summary below, or check out the PDF for the full submitted version."
       ],
       cv: {
         education: {
