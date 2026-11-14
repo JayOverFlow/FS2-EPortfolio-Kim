@@ -1823,3 +1823,39 @@ body::before {
   object-fit: cover;
   display: block;
 }
+
+/* Certificates showcase */
+.cert-showcase {
+  display: flex;
+  gap: 24px;
+  padding: 12px 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cert-showcase + .doc-list { border-top: none; }
+.cert-card {
+  flex: 0 0 auto;
+  width: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(212,120,154,0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cert-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(212,120,154,0.35);
+  z-index: 2;
+}
+.cert-showcase .cert-card:nth-child(1) { transform: rotate(-4deg); margin-top: 16px; }
+.cert-showcase .cert-card:nth-child(2) { transform: rotate(4deg); }
+.cert-showcase .cert-card:nth-child(2):hover { transform: rotate(4deg) scale(1.05); }
+.cert-showcase .cert-card:nth-child(3) { margin-top: 16px; }
+.cert-showcase .cert-card:nth-child(3):hover { transform: scale(1.05); }
+.cert-showcase .cert-card:nth-child(1):hover { transform: rotate(-4deg) scale(1.05); }
+.cert-showcase .cert-card:nth-child(3):hover { transform: rotate(4deg) scale(1.05); }
+.cert-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
