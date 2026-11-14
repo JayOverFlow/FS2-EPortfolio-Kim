@@ -140,8 +140,8 @@ img {
   justify-content: space-between;
   gap: 20px;
   padding: 12px var(--gutter);
-  border-bottom: 1px solid var(--rule);
-  background: rgba(250, 248, 243, 0.93);
+  border-bottom: 1px solid #D4789A;
+  background: #F5EFD6;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -152,7 +152,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: #3A0A14;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -251,7 +251,7 @@ img {
   padding: clamp(10px, 1.5vw, 20px) var(--gutter) clamp(36px, 5vw, 64px);
   border-bottom: 1px solid var(--rule);
   scroll-margin-top: 64px;
-  background: linear-gradient(135deg, #fff5f8 0%, #fce8ef 50%, #faf8f3 100%);
+  background: #FCEEF2;
 }
 
 .hero-inner {
@@ -271,14 +271,14 @@ img {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.02em;
-  color: var(--muted);
+  color: #D4789A;
 }
 
 .mark {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: var(--blue);
+  background: #D4789A;
   flex: none;
 }
 
@@ -290,7 +290,7 @@ img {
   line-height: 0.95;
   letter-spacing: 0;
   text-transform: none;
-  color: var(--blue-dark);
+  color: #3A0A14;
 }
 
 .hero-name span {
@@ -312,7 +312,7 @@ img {
   font-style: italic;
   font-size: clamp(1.1rem, 1.6vw, 1.3rem);
   line-height: 1.5;
-  color: var(--ink-soft);
+  color: #3A0A14;
   animation: rise 0.7s 0.18s var(--ease) both;
 }
 
@@ -321,7 +321,7 @@ img {
   margin: 20px 0 0;
   font-size: 1rem;
   line-height: 1.65;
-  color: var(--muted);
+  color: #5A3B42;
   animation: rise 0.7s 0.26s var(--ease) both;
 }
 
